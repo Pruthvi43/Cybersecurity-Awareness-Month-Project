@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#06111f">
+  <title>Password Power | Cyber Vault Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <header class="header">
+      <div class="logo">🛡️</div>
+      <div>
+        <div class="eyebrow">CYBERSECURITY AWARENESS MONTH</div>
+        <h1>PASSWORD POWER</h1>
+        <div class="subtitle">THE CYBER VAULT CHALLENGE</div>
+      </div>
+    </header>
+
+    <div class="stats">
+      <span>◈ MISSION: STOP THE HACKER</span>
+      <span class="xp">⚡ <span id="xp">0</span> XP</span>
+    </div>
+
+    <section id="intro">
+      <div class="hero">
+        <div class="vault">🔐</div>
+        <div class="eyebrow">INCOMING SECURITY ALERT</div>
+        <h2>Your mission starts here.</h2>
+        <p>A hacker is targeting the Cyber Vault! Complete six security missions, earn XP, and protect the digital world.</p>
+      </div>
+
+      <div class="features">
+        <div class="feature"><span>🔑</span>6 Missions</div>
+        <div class="feature"><span>⚡</span>600 XP</div>
+        <div class="feature"><span>🏆</span>One Champion</div>
+      </div>
+
+      <button class="primary" id="start">▶ START MISSION</button>
+      <p class="privacy-note">Training simulation only. Never enter a real password.</p>
+    </section>
+
+    <section id="play" class="hidden">
+      <div class="progress-info">
+        <span id="mission">MISSION 1 OF 6</span>
+        <span id="scoreLabel">SCORE: 0/6</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress"></div>
+      </div>
+
+      <div class="mission-tag" id="category">PASSWORD SCANNER</div>
+      <h2 class="question" id="question"></h2>
+      <p class="hint">Choose the best answer to unlock the vault.</p>
+
+      <div class="choices" id="choices"></div>
+      <div id="feedback" aria-live="polite"></div>
+      <button id="next" class="primary hidden">NEXT MISSION →</button>
+
+      <div class="footer">
+        <span>CYBER DEFENSE SYSTEM v1.0</span>
+        <span id="footerScore">0 / 6 CORRECT</span>
+      </div>
+    </section>
+
+    <section id="results" class="hidden">
+      <div class="result">
+        <div class="result-icon" id="resultIcon">🏆</div>
+        <div class="eyebrow">CYBER VAULT STATUS: SECURED</div>
+        <h2 id="resultTitle">MISSION COMPLETE!</h2>
+        <div class="result-score"><span id="finalScore">0</span> XP</div>
+        <p id="resultMessage"></p>
+        <div class="result-badge" id="resultBadge"></div>
+      </div>
+
+      <div class="tips">
+        <h3>🛡️ Your Cyber Defense Checklist</h3>
+        <ul>
+          <li>Use long, unique passwords or passphrases.</li>
+          <li>Never reuse passwords across accounts.</li>
+          <li>Use a trusted password manager.</li>
+          <li>Enable multi-factor authentication (MFA).</li>
+          <li>Never share passwords or trust suspicious requests.</li>
+        </ul>
+      </div>
+      <button class="primary" id="restart">↻ PLAY AGAIN</button>
+    </section>
+  </main>
+</body>
+</html>
