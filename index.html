@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Defender | Cybersecurity Awareness</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand">🛡️ CyberSafe</div>
+    <span class="campaign">CYBERSECURITY AWARENESS MONTH</span>
+  </header>
+
+  <main class="container">
+    <section class="intro" id="intro">
+      <div class="shield">🛡️</div>
+      <p class="eyebrow">CYBERSECURITY MINI-GAME</p>
+      <h1>Real Update or <span>Fake Update?</span></h1>
+      <p class="description">
+        Can you tell the difference between a legitimate software
+        update and a dangerous fake? Test your cybersecurity skills!
+      </p>
+
+      <div class="info">
+        <div>🎯 <strong>5 rounds</strong></div>
+        <div>⏱️ <strong>2 minutes</strong></div>
+        <div>🏆 <strong>Earn points</strong></div>
+      </div>
+
+      <button id="start-btn" class="primary-btn">
+        Start Game →
+      </button>
+    </section>
+
+    <section class="game hidden" id="game">
+      <div class="game-top">
+        <span id="round-label">ROUND 1 OF 5</span>
+        <span class="score">Score: <strong id="score">0</strong></span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress" class="progress-fill"></div>
+      </div>
+
+      <div class="scenario-card">
+        <div id="scenario-icon" class="scenario-icon">💻</div>
+        <p class="eyebrow">UPDATE ALERT</p>
+        <h2 id="scenario-title">Software Update Available</h2>
+        <p id="scenario-text"></p>
+
+        <div class="fake-window">
+          <div class="window-bar">
+            <span id="window-icon">🔔</span>
+            <span id="window-source">System Notification</span>
+            <span class="window-dots">•••</span>
+          </div>
+          <div id="window-content" class="window-content"></div>
+        </div>
+      </div>
+
+      <h3 class="question">What should you do?</h3>
+
+      <div class="answers">
+        <button class="answer-btn" data-answer="real">
+          <span>✅</span>
+          <span>Legitimate update</span>
+        </button>
+        <button class="answer-btn" data-answer="fake">
+          <span>🚨</span>
+          <span>Suspicious update</span>
+        </button>
+      </div>
+
+      <div id="feedback" class="feedback hidden" role="status"
+           aria-live="polite">
+        <h3 id="feedback-title"></h3>
+        <p id="feedback-text"></p>
+        <button id="next-btn" class="primary-btn">Next Round →</button>
+      </div>
+    </section>
+
+    <section id="results" class="results hidden">
+      <div class="shield">🏆</div>
+      <p class="eyebrow">GAME COMPLETED</p>
+      <h1 id="result-title">Well done!</h1>
+      <p class="description" id="result-message"></p>
+
+      <div class="result-score">
+        <span>Your final score</span>
+        <strong id="final-score">0/5</strong>
+        <div class="progress-track">
+          <div id="final-progress" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <p id="result-tip" class="tip"></p>
+
+      <button id="restart-btn" class="primary-btn">
+        ↻ Play Again
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Think before you click. Update smart. Stay secure. 🔐</p>
+    <p>Cybersecurity Awareness Month</p>
+  </footer>
+</body>
+</html>
